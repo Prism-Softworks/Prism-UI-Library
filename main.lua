@@ -18,7 +18,9 @@
 --  LOAD THE LIBRARY
 --  (Replace the require below with your loadstring/require path)
 -- ════════════════════════════════════════════════════════════════════
-local StarLight = loadstring(readfile("StarlightInterfaceSuite.lua"))()
+local StarLight = loadstring(game:HttpGet(
+    "https://raw.githubusercontent.com/Prism-Softworks/Prism-UI-Library/main/main.lua"
+))()
 -- local StarLight = require(game.ReplicatedStorage.StarlightInterfaceSuite)
  
 -- ════════════════════════════════════════════════════════════════════
