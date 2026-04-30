@@ -133,18 +133,18 @@ local Themes = {
 			Shadow = Color3.fromRGB(19, 21, 24),
 			LighterShadow = Color3.fromRGB(24, 25, 30),
 		},
-	Accents = {
-	Main = ColorSequence.new({
-		ColorSequenceKeypoint.new(0.0, Color3.fromRGB(160, 210, 255)),
-		ColorSequenceKeypoint.new(0.5, Color3.fromRGB(90, 160, 235)),
-		ColorSequenceKeypoint.new(1.0, Color3.fromRGB(60, 120, 220)),
-	}),
-	Brighter = ColorSequence.new({
-		ColorSequenceKeypoint.new(0.0, Color3.fromRGB(190, 230, 255)),
-		ColorSequenceKeypoint.new(0.5, Color3.fromRGB(130, 190, 245)),
-		ColorSequenceKeypoint.new(1.0, Color3.fromRGB(110, 170, 240)),
-	}),
-},
+		Accents = {
+			Main = ColorSequence.new({
+				ColorSequenceKeypoint.new(0.0, Color3.fromRGB(230, 186, 251)),
+				ColorSequenceKeypoint.new(0.5, Color3.fromRGB(161, 169, 225)),
+				ColorSequenceKeypoint.new(1.0, Color3.fromRGB(138, 201, 242)),
+			}),
+			Brighter = ColorSequence.new({
+				ColorSequenceKeypoint.new(0.0, Color3.fromRGB(241, 212, 251)),
+				ColorSequenceKeypoint.new(0.5, Color3.fromRGB(187, 192, 225)),
+				ColorSequenceKeypoint.new(1.0, Color3.fromRGB(195, 227, 242)),
+			}),
+		},
 	},
 	["Hollywood Dark"] = {
 		Backgrounds = {
@@ -3320,7 +3320,7 @@ task.spawn(function()
 
 		local formatted = string.format("%02d : %02d : %02d", t.hour, t.min, t.sec)
 
-		local message = "Good to see you again."
+		local message = "Good to see you again"
 
 		Tab.Instances.Page.playerUser.Text = message .. " | " .. Player.Name
 
