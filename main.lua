@@ -114,38 +114,43 @@ local Themes = {
 
 	Starlight = {
 		Backgrounds = {
-			Dark = Color3.fromRGB(23, 25, 29),
-			Medium = Color3.fromRGB(27, 29, 33),
-			Light = Color3.fromRGB(33, 34, 38),
-			Groupbox = Color3.fromRGB(33, 36, 42),
-			Highlight = Color3.fromRGB(17, 19, 22),
+			Dark = Color3.fromRGB(20, 24, 32),
+			Medium = Color3.fromRGB(24, 30, 42),
+			Light = Color3.fromRGB(30, 38, 52),
+			Groupbox = Color3.fromRGB(28, 36, 50),
+			Highlight = Color3.fromRGB(16, 20, 28),
 		},
+
 		Foregrounds = {
-			Active = Color3.fromRGB(255, 255, 255),
-			Light = Color3.fromRGB(255, 255, 255),
-			Medium = Color3.fromRGB(165, 165, 165),
-			Dark = Color3.fromRGB(65, 69, 77),
-			MediumHover = Color3.fromRGB(185, 185, 185),
-			DarkHover = Color3.fromRGB(85, 89, 97),
+			Active = Color3.fromRGB(235, 245, 255),
+			Light = Color3.fromRGB(235, 245, 255),
+			Medium = Color3.fromRGB(150, 175, 200),
+			Dark = Color3.fromRGB(70, 85, 105),
+			MediumHover = Color3.fromRGB(180, 205, 230),
+			DarkHover = Color3.fromRGB(90, 110, 140),
 		},
+
 		Miscellaneous = {
-			Divider = Color3.fromRGB(117, 128, 149),
-			Shadow = Color3.fromRGB(19, 21, 24),
-			LighterShadow = Color3.fromRGB(24, 25, 30),
+			Divider = Color3.fromRGB(80, 140, 200),
+			Shadow = Color3.fromRGB(14, 18, 24),
+			LighterShadow = Color3.fromRGB(20, 26, 36),
 		},
+
 		Accents = {
 			Main = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.0, Color3.fromRGB(230, 186, 251)),
-				ColorSequenceKeypoint.new(0.5, Color3.fromRGB(161, 169, 225)),
-				ColorSequenceKeypoint.new(1.0, Color3.fromRGB(138, 201, 242)),
+				ColorSequenceKeypoint.new(0.0, Color3.fromRGB(0, 170, 255)),
+				ColorSequenceKeypoint.new(0.5, Color3.fromRGB(0, 120, 220)),
+				ColorSequenceKeypoint.new(1.0, Color3.fromRGB(0, 200, 255)),
 			}),
+
 			Brighter = ColorSequence.new({
-				ColorSequenceKeypoint.new(0.0, Color3.fromRGB(241, 212, 251)),
-				ColorSequenceKeypoint.new(0.5, Color3.fromRGB(187, 192, 225)),
-				ColorSequenceKeypoint.new(1.0, Color3.fromRGB(195, 227, 242)),
+				ColorSequenceKeypoint.new(0.0, Color3.fromRGB(80, 200, 255)),
+				ColorSequenceKeypoint.new(0.5, Color3.fromRGB(120, 220, 255)),
+				ColorSequenceKeypoint.new(1.0, Color3.fromRGB(180, 240, 255)),
 			}),
 		},
 	},
+}
 	["Hollywood Dark"] = {
 		Backgrounds = {
 			Dark = Color3.fromRGB(8, 8, 8),
