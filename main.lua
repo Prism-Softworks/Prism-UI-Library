@@ -2643,6 +2643,7 @@ function Starlight:CreateWindow(WindowSettings)
 			"rbxassetid://123097456061373", -- minimise
 			"rbxassetid://114684871091583", -- maximise
 			"rbxassetid://6034304908", -- notification
+			"rbxassetid://8445471332", -- search
 			"rbxassetid://92421933997743", -- Corner Repair
 			"rbxassetid://80990588449079", -- loading circle
 		}, function(asset)
@@ -2687,7 +2688,7 @@ function Starlight:CreateWindow(WindowSettings)
 				ThemeMethods.bindTheme(control, "BackgroundColor3", "Foregrounds.Dark")
 			end
 			ThemeMethods.bindTheme(mainWindow.Content.Topbar.NotificationCenterIcon, "ImageColor3", "Foregrounds.Dark")
-
+			ThemeMethods.bindTheme(mainWindow.Content.Topbar.Search, "ImageColor3", "Foregrounds.Dark")
 			ThemeMethods.bindTheme(mainWindow.Content.ContentMain, "BackgroundColor3", "Backgrounds.Dark")
 			for _, cornerrepair in pairs(mainWindow.Content.ContentMain.CornerRepairs:GetChildren()) do
 				ThemeMethods.bindTheme(cornerrepair, "ImageColor3", "Backgrounds.Dark")
@@ -10131,6 +10132,13 @@ end)
 				task.wait(1)
 				notifdebounce = false
 			end
+		end)
+
+		mainWindow.Content.Topbar.Search["MouseEnter"]:Connect(function()
+			Tween(mainWindow.Content.Topbar.Search, { ImageColor3 = Starlight.CurrentTheme.Foregrounds.DarkHover })
+		end)
+		mainWindow.Content.Topbar.Search["MouseLeave"]:Connect(function()
+			Tween(mainWindow.Content.Topbar.Search, { ImageColor3 = Starlight.CurrentTheme.Foregrounds.Dark })
 		end)
 
 		for _, Button in pairs(mainWindow.Content.Topbar.Controls:GetChildren()) do
