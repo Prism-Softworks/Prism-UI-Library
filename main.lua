@@ -150,7 +150,6 @@ local Themes = {
 			}),
 		},
 	},
-}
 	["Hollywood Dark"] = {
 		Backgrounds = {
 			Dark = Color3.fromRGB(8, 8, 8),
